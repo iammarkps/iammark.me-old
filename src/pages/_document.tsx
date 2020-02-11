@@ -28,10 +28,7 @@ class NextSite extends Document {
           <meta property="og:title" content="I AM MARK" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://iammark.me" />
-          <meta
-            name="description"
-            content="นิทรรศการวิชาการ โรงเรียนเตรียมอุดมศึกษา ประจำปี ๒๕๖๒"
-          />
+          <meta name="description" content="Personal site of IAMMARK" />
         </Head>
         <body>
           <Main />
