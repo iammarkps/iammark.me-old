@@ -1,36 +1,61 @@
 import React from 'react'
 
-import { Flex, Heading, Box, Text, Link } from '@chakra-ui/core'
+import { Flex, Heading, Box, Text, Link as ChakraLink } from '@chakra-ui/core'
+import styled from '@emotion/styled'
+
+const Link = styled(ChakraLink)`
+  transition: all 0.15s ease-out;
+
+  :hover {
+    color: black;
+  }
+`
 
 const Index = ({ quotes }) => (
-  <Flex justify="center" align="center" direction="column" height="100%">
+  <Flex
+    justify="center"
+    align="center"
+    direction="column"
+    height="100%"
+    boxShadow="inset 0px 0px 0px 8px #222"
+  >
     <Box m="auto" />
-    <Box px={6} pt={16}>
+    <Box px={6} pt={[32, 16]}>
       <Heading size="xl">POSSAWAT SUKSAI</Heading>
       <Heading
         size="xs"
         color="gray.600"
         letterSpacing="0.0625em"
-        textAlign="right"
+        textAlign={['left', 'right']}
         width="100%"
+        mt={[2, 0]}
       >
-        triamudom 81 | programmer | photographer
+        TU81 | programmer | photographer
       </Heading>
       <Text mt={8} textAlign="center" fontStyle="italic">
         {quotes}
       </Text>
     </Box>
     <Box m="auto" />
-    <Box mb={16}>
-      <Text>
-        <Text fontWeight={700} display="inline" mr={30}>
-          MARK
+    <Flex mb={[8, 16]} direction={['column', 'row']} color="#666">
+      <Flex justify="center" align="center">
+        <Text
+          fontWeight={700}
+          display="inline"
+          mr={[0, 30]}
+          mb={['8px', 0]}
+          fontSize={['14px', '16px']}
+        >
+          Mark
         </Text>
+      </Flex>
+      <Box>
         <Link
           href="https://github.com/iammarkps"
           target="_blank"
           rel="noopener noreferrer"
           mr={30}
+          fontSize={['14px', '16px']}
         >
           GitHub
         </Link>
@@ -39,6 +64,7 @@ const Index = ({ quotes }) => (
           target="_blank"
           rel="noopener noreferrer"
           mr={30}
+          fontSize={['14px', '16px']}
         >
           Blog
         </Link>
@@ -46,11 +72,12 @@ const Index = ({ quotes }) => (
           href="https://www.instagram.com/iammark._/"
           target="_blank"
           rel="noopener noreferrer"
+          fontSize={['14px', '16px']}
         >
           Instagram
         </Link>
-      </Text>
-    </Box>
+      </Box>
+    </Flex>
   </Flex>
 )
 
