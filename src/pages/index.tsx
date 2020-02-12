@@ -20,7 +20,7 @@ const Index = ({ quotes }) => (
     boxShadow="inset 0px 0px 0px 8px #222"
   >
     <Box m="auto" />
-    <Box px={6} pt={[32, 16]}>
+    <Box px={6} mt={[32, 16]}>
       <Heading size="xl">POSSAWAT SUKSAI</Heading>
       <Heading
         size="xs"
