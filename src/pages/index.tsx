@@ -81,7 +81,7 @@ const Index = ({ quotes }) => (
           GitHub
         </Link>
         <Link
-          href="https://medium.com/@iammark._"
+          href="https://blog.iammark.me"
           target="_blank"
           rel="noopener noreferrer"
           mr={30}
