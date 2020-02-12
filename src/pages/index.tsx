@@ -1,7 +1,14 @@
 import React from 'react'
 
-import { Flex, Heading, Box, Text, Link as ChakraLink } from '@chakra-ui/core'
+import {
+  Flex as FlexBox,
+  Heading,
+  Box,
+  Text,
+  Link as ChakraLink
+} from '@chakra-ui/core'
 import styled from '@emotion/styled'
+import { keyframes } from '@emotion/core'
 
 const Link = styled(ChakraLink)`
   transition: all 0.15s ease-out;
@@ -9,6 +16,20 @@ const Link = styled(ChakraLink)`
   :hover {
     color: black;
   }
+`
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`
+
+const Flex = styled(FlexBox)`
+  animation: ${fadeIn} 2s;
 `
 
 const Index = ({ quotes }) => (
