@@ -59,9 +59,16 @@ const Index = ({ quotes }) => (
         </Text>
       </Flex>
       <Box>
-        <SocialLink href="https://github.com/iammarkps">GitHub</SocialLink>
-        <SocialLink href="https://blog.iammark.me">Blog</SocialLink>
-        <SocialLink href="https://www.instagram.com/iammark._/">
+        <SocialLink href="https://github.com/iammarkps" mr={30}>
+          GitHub
+        </SocialLink>
+        <SocialLink href="https://blog.iammark.me" mr={30}>
+          Blog
+        </SocialLink>
+        <SocialLink href="https://twitter.com/iammarkps" mr={30}>
+          Twitter
+        </SocialLink>
+        <SocialLink href="https://www.instagram.com/iammark._/" mr={0}>
           Instagram
         </SocialLink>
       </Box>

@@ -11,12 +11,13 @@ const Link = styled(ChakraLink)`
   }
 `
 
-export const SocialLink = ({ href, children }) => (
+export const SocialLink = ({ href, children, mr }) => (
   <Link
     href={href}
     target="_blank"
     rel="noopener noreferrer"
     fontSize={['14px', '16px']}
+    mr={mr}
   >
     {children}
   </Link>
