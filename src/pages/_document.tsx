@@ -19,6 +19,7 @@ class NextSite extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="shortcut icon" href="/assets/favicon.png" />
           <meta name="theme-color" content="#ffffff" />
           <meta
             name="viewport"
@@ -28,7 +29,12 @@ class NextSite extends Document {
           <meta property="og:title" content="I AM MARK" />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://iammark.me" />
-          <meta name="description" content="Personal site of IAMMARK" />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@iammarkps" />
+          <meta name="twitter:creator" content="@iammarkps" />
+          <meta name="twitter:title" content="iammark" />
+          <meta name="twitter:description" content="IAMMARK" />
+          <meta name="description" content="IAMMARK" />
         </Head>
         <body>
           <Main />
