@@ -1,22 +1,10 @@
 import React from 'react'
 
-import {
-  Flex as FlexBox,
-  Heading,
-  Box,
-  Text,
-  Link as ChakraLink
-} from '@chakra-ui/core'
+import { Flex as FlexBox, Heading, Box, Text } from '@chakra-ui/core'
 import styled from '@emotion/styled'
 import { keyframes } from '@emotion/core'
 
-const Link = styled(ChakraLink)`
-  transition: all 0.15s ease-out;
-
-  :hover {
-    color: black;
-  }
-`
+import { SocialLink } from '../components/SocialLink'
 
 const fadeIn = keyframes`
   from {
@@ -71,32 +59,11 @@ const Index = ({ quotes }) => (
         </Text>
       </Flex>
       <Box>
-        <Link
-          href="https://github.com/iammarkps"
-          target="_blank"
-          rel="noopener noreferrer"
-          mr={30}
-          fontSize={['14px', '16px']}
-        >
-          GitHub
-        </Link>
-        <Link
-          href="https://blog.iammark.me"
-          target="_blank"
-          rel="noopener noreferrer"
-          mr={30}
-          fontSize={['14px', '16px']}
-        >
-          Blog
-        </Link>
-        <Link
-          href="https://www.instagram.com/iammark._/"
-          target="_blank"
-          rel="noopener noreferrer"
-          fontSize={['14px', '16px']}
-        >
+        <SocialLink href="https://github.com/iammarkps">GitHub</SocialLink>
+        <SocialLink href="https://blog.iammark.me">Blog</SocialLink>
+        <SocialLink href="https://www.instagram.com/iammark._/">
           Instagram
-        </Link>
+        </SocialLink>
       </Box>
     </Flex>
   </Flex>
