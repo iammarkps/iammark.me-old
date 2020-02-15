@@ -27,9 +27,17 @@ class NextSite extends Document {
           />
           <meta name="theme-color" content="black" />
           <meta property="og:title" content="I AM MARK" />
+          <meta
+            property="og:image"
+            content="https://iammark.me/assets/og.png"
+          />
           <meta property="og:type" content="website" />
           <meta property="og:url" content="http://iammark.me" />
           <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:image"
+            content="https://iammark.me/assets/og.png"
+          />
           <meta name="twitter:site" content="@iammarkps" />
           <meta name="twitter:creator" content="@iammarkps" />
           <meta name="twitter:title" content="iammark" />
